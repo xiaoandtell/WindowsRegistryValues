@@ -39,3 +39,11 @@ reg add "HKLM\Software\Policies\Microsoft\Windows\AdvertisingInfo" /v "Enabled" 
 
 
 
+
+
+# disable automatic reporting
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting" /v "Disabled" /t REG_DWORD /d "1" /f
+
+
+
+
