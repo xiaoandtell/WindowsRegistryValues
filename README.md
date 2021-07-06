@@ -47,3 +47,6 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting" 
 
 
 
+# disable "This App is preventing shutdown"
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v "AutoEndTasks" /t REG_DWORD /d "1" /f
+
